@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  margin: 0;
+  box-sizing: border-box;
 }
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#root > div {
+  box-sizing: border-box;
+  min-width: 100vw;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+nav ul a {
+  text-decoration: none;
+  border: 1px solid purple;
+  text-align: center;
+  padding: 8px 16px;
+  color: purple;
+}
+
+ nav ul a:hover {
+  padding: 8px 16px;
+  color: aqua;
+  background-color: purple;
+}
+
+.header {
+  background: purple;
+  color: whitesmoke;
+  min-height: 15vh;
+  text-align: center; 
+  padding: 5px;
+}
+
+.footer {
+  background: purple;
+  min-height: 10vh; 
+  padding: 5px;
+}
+
+.nav {
+  background: aqua;
+  min-height: 10vh;
+  padding: 5px;
+}
+
+.home {
+  background: whitesmoke;
+  min-height: 65vh;
+  padding: 10px;
+} 
+
+.report {
+  background: whitesmoke;
+  min-height: 65vh;
+  padding: 10px;
+} 
+
+.about {
+  background: whitesmoke;
+  min-height: 65vh;
+  padding: 10px;
+} 
